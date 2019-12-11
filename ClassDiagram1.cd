@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="poo1_v2.Voiture">
+    <Position X="9" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>Voiture.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="poo1_v2.Vehicule">
+    <Position X="11.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAIAAAEAAAAAAAAAQAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>Vehicule.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="poo1_v2.Distance">
+    <Position X="5.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>Distance.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="poo1_v2.Trajet">
+    <Position X="4.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAABAQIAAAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>Trajet.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
