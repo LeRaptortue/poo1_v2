@@ -2,10 +2,12 @@
 Option Strict On
 
 ''' <summary>
-''' CLasse TRAJET
-''' 
-''' Trajet en voiture de la ville de départ à la ville d'arrivée
+''' Constructeur d'un TRAJET
 ''' </summary>
+''' <param name="départ">La ville de départ</param>
+''' <param name="arrivée">La ville de destination</param>
+''' <param name="distance">La distance entre les deux villes</param>
+
 Public Class Trajet
     Private _départ As String = "ici"
     Private _arrivée As String = "là"
@@ -16,6 +18,11 @@ Public Class Trajet
         _départ = départ
         _arrivée = arrivée
         _distance = New Distance(distance)
+        Decompte.Plus()
+    End Sub
+
+    Protected Overrides Sub Finalize()
+        Decompte.Moins()
     End Sub
     Public Sub Saisir()
         Console.WriteLine(My.Resources.Depart)

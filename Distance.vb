@@ -6,6 +6,10 @@ Public Class Distance
     Private unite As String = " km"
     Public Sub New(distance As Integer)
         _d = distance
+        Decompte.Plus()
+    End Sub
+    Protected Overrides Sub Finalize()
+        Decompte.Moins()
     End Sub
     Public Property LaDistance As Integer
         Get

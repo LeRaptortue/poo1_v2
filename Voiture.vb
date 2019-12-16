@@ -3,8 +3,16 @@ Option Strict On
 
 Public Class Voiture
     Inherits Vehicule
-    Protected _roues As String = "4x195/55R16"
+    Protected _roues As String
 
+    Public Sub New(roue As String)
+        _roues = roue
+        Decompte.Plus()
+    End Sub
+
+    Protected Overrides Sub Finalize()
+        Decompte.Moins()
+    End Sub
     Public Property lesRoues As String
         Get
             Return _roues
