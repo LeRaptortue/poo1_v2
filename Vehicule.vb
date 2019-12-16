@@ -3,7 +3,7 @@ Option Strict On
 Public Class Vehicule
     Private _chassis As String = "Carton"
     Private _carrosserie As String = "Jaune Poussin"
-    Private _moteur As String = "Double V8"
+    Private _moteur As String = "Double V8 de la Mort"
 
     Private Property leMoteur As String
         Get
@@ -14,6 +14,6 @@ Public Class Vehicule
     End Property
 
     Public Overrides Function ToString() As String
-        Return "> " & _chassis & " : " & _carrosserie & Chr(13) & Chr(10) & "> Moteur : " & _moteur
+        Return Environment.NewLine & "> Chassis : " & _chassis & Environment.NewLine & "> Carroserie : " & _carrosserie & Environment.NewLine & "> Moteur : " & _moteur
     End Function
 End Class

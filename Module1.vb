@@ -2,11 +2,13 @@
 Option Strict On
 
 Module Module1
-    Dim maClio As New Voiture()
-    Dim voyage As New Trajet()
+
     Sub Main()
+        Aide()
+        Dim maClio As New Voiture()
+        Dim voyage = New Trajet(CType(Saisir("Ville A", "String"), String), CType(Saisir("ville B", "String"), String), CType(Saisir("Distance", "Integer"), Integer))
         System.Console.WriteLine(maClio)
-        System.Console.WriteLine(Chr(13) & Chr(10))
+        System.Console.WriteLine(Environment.NewLine)
         System.Console.WriteLine(voyage)
         System.Console.ReadKey()
     End Sub

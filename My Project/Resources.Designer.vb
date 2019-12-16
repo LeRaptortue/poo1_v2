@@ -77,5 +77,14 @@ Namespace My.Resources
                 Return ResourceManager.GetString("Depart", resourceCulture)
             End Get
         End Property
+        
+        '''<summary>
+        '''  Recherche une chaîne localisée semblable à Quelle distance ?.
+        '''</summary>
+        Friend ReadOnly Property Distance() As String
+            Get
+                Return ResourceManager.GetString("Distance", resourceCulture)
+            End Get
+        End Property
     End Module
 End Namespace

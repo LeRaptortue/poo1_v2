@@ -123,4 +123,7 @@
   <data name="Depart" xml:space="preserve">
     <value>Ville de Départ :</value>
   </data>
+  <data name="Distance" xml:space="preserve">
+    <value>Quelle distance ?</value>
+  </data>
 </root>
