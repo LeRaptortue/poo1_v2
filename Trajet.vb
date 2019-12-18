@@ -22,7 +22,7 @@ Public Class Trajet
     End Sub
 
     Protected Overrides Sub Finalize()
-        Decompte.Moins()
+        Decompte.Instance().Moins()
     End Sub
     Public Sub Saisir()
         Console.WriteLine(My.Resources.Depart)

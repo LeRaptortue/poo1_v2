@@ -9,7 +9,7 @@ Public Class Distance
         Decompte.Plus()
     End Sub
     Protected Overrides Sub Finalize()
-        Decompte.Moins()
+        Decompte.Instance().Moins()
     End Sub
     Public Property LaDistance As Integer
         Get

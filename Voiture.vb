@@ -11,7 +11,8 @@ Public Class Voiture
     End Sub
 
     Protected Overrides Sub Finalize()
-        Decompte.Moins()
+        Decompte.Instance().Moins()
+        MyBase.Finalize()
     End Sub
     Public Property lesRoues As String
         Get
