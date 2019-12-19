@@ -24,6 +24,6 @@ Public Class Voiture
     End Property
 
     Public Overrides Function ToString() As String
-        Return MyBase.ToString() & Chr(13) & Chr(10) & "> Roues : " & _roues
+        Return MyBase.ToString() & Environment.NewLine & "> Roues : " & _roues
     End Function
 End Class

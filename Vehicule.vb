@@ -12,7 +12,9 @@ Public Class Vehicule
         Set(value As String)
         End Set
     End Property
-
+    Public Sub test()
+        MsgBox(MyBase.ToString)
+    End Sub
     Public Overrides Function ToString() As String
         Return Environment.NewLine & "> Chassis : " & _chassis & Environment.NewLine & "> Carroserie : " & _carrosserie & Environment.NewLine & "> Moteur : " & _moteur
     End Function

@@ -14,10 +14,10 @@
     End Function
     Public Shared Sub Plus()
         _compte += 1
-        Logs.Instance.Trace("++ comptage: " & _compte)
+        Logs.Instance.Trace("+1 Comptage: " & _compte)
     End Sub
     Public Shared Sub Moins()
         _compte -= 1
-        Logs.Instance.Trace("--décomptage: " & _compte)
+        Logs.Instance.Trace("-1 Décomptage: " & _compte)
     End Sub
 End Class
